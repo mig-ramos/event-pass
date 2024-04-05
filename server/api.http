@@ -15,3 +15,15 @@ Content-Type: application/json
     "name": "Miguel A Ramos",
     "email": "miguel@teste.com"
 }
+
+###
+GET http://localhost:3333/events/e8340e95-7afd-48c9-b099-3d44a2f7cb43
+
+###
+GET http://localhost:3333/attendees/1/badge
+
+###
+GET http://localhost:3333/attendees/1/check-in
+
+###
+GET http://localhost:3333/events/e8340e95-7afd-48c9-b099-3d44a2f7cb43/attendees?query=miguel
