@@ -2,7 +2,12 @@ import fastify from "fastify";
 
 const app = fastify();
 
-app.get('/', ()=>{
+// app.get('/', ()=>{
+//     return 'Hello server funcionando!'
+// })
+
+app.post('/events', (request, reply)=>{
+    console.log(request.body)
     return 'Hello server funcionando!'
 })
 
