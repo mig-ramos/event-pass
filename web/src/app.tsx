@@ -1,7 +1,12 @@
+import { Header } from "./components/header";
 
 export function App() {
 
-  return <h1 className="text-red-400">Hello Word</h1>
+  return (
+    <div>
+      <Header />
+    </div>
+  )
 }
 
 
