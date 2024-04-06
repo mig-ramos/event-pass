@@ -1,7 +1,7 @@
 
 export function App() {
 
-  return <h1>Hello Word</h1>
+  return <h1 className="text-red-400">Hello Word</h1>
 }
 
 
