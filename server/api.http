@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3333/events/e8340e95-7afd-48c9-b099-3d44a2f7cb43
+GET http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33
 
 ###
 GET http://localhost:3333/attendees/1/badge
@@ -26,4 +26,4 @@ GET http://localhost:3333/attendees/1/badge
 GET http://localhost:3333/attendees/1/check-in
 
 ###
-GET http://localhost:3333/events/e8340e95-7afd-48c9-b099-3d44a2f7cb43/attendees?query=miguel
+GET http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees?query=miguel

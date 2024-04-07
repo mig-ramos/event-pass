@@ -143,30 +143,30 @@ export function AttendeeList() {
           </tr>
         </thead>
         <tbody>
-          {attendees.map((ateendee) => {
+          {attendees.map((attendee) => {
             return (
-              <TableRow key={ateendee.id}>
+              <TableRow key={attendee.id}>
                 <TableCell>
                   <input
                     type="checkbox"
                     className="size-4 bg-black/20 rounded border border-white/10"
                   />
                 </TableCell>
-                <TableCell>{ateendee.id}</TableCell>
+                <TableCell>{attendee.id}</TableCell>
                 <TableCell>
                   <div className="flex flex-col gap-1">
                     <span className="font-semibold text-white">
-                      {ateendee.name}
+                      {attendee.name}
                     </span>
-                    <span>{ateendee.email}</span>
+                    <span>{attendee.email}</span>
                   </div>
                 </TableCell>
-                <TableCell>{dayjs().to(ateendee.createdAt)}</TableCell>
+                <TableCell>{dayjs().to(attendee.createdAt)}</TableCell>
                 <TableCell>
-                  {ateendee.checkedInAt === null ? (
+                  {attendee.checkedInAt === null ? (
                     <span className="text-zinc-400">Não fez check-in</span>
                   ) : (
-                    dayjs().to(ateendee.checkedInAt)
+                    dayjs().to(attendee.checkedInAt)
                   )}
                 </TableCell>
                 <TableCell>

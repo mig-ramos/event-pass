@@ -40,10 +40,10 @@ export async function getEventAttendees(app: FastifyInstance) {
                     id: true,
                     name: true,
                     email: true,
-                    createAt: true,
+                    createdAt: true,
                     checkIn: {
                         select: {
-                            createAt: true,
+                            createdAt: true,
                         }
                     }
                 },
@@ -58,7 +58,7 @@ export async function getEventAttendees(app: FastifyInstance) {
                 take: 10,
                 skip: pageIndex * 10,
                 orderBy: {
-                    createAt: 'desc'
+                    createdAt: 'desc'
                 }
             })
 
@@ -68,8 +68,8 @@ export async function getEventAttendees(app: FastifyInstance) {
                         id: attendee.id,
                         name: attendee.name,
                         email: attendee.email,
-                        createdAt: attendee.createAt,
-                        checkedInAt: attendee.checkIn?.createAt ?? null,
+                        createdAt: attendee.createdAt,
+                        checkedInAt: attendee.checkIn?.createdAt ?? null,
                     }
                 })
             })
