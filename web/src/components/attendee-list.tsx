@@ -41,7 +41,7 @@ export function AttendeeList() {
     const url = new URL(window.location.toString());
 
     if (url.searchParams.has("page")) {
-      return Number(url.searchParams.get("page"));
+     return Number(url.searchParams.get("page"));
     }
 
     return 1;
