@@ -1,22 +1,21 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Image } from "react-native";
 
-export default function Home(){
-    return(
-        <View style={styles.container}>
-            <Text style={styles.title}>Hello React Native</Text>
-        </View>
-    )
+import { Input } from "../components/input";
+import { Button } from "../components/button";
+
+export default function Home() {
+  return (
+    <View className="flex-1 bg-green-500 items-center justify-center p-8">
+      <Image
+        source={require("@/assets/logo.png")}
+        className="h-16"
+        resizeMode="contain"
+      />
+
+      <View className="w-full mt-12 gap-3">
+        <Input icon="mail" placeholder="E-mail" />
+        <Button title="Acessar credencial" />
+      </View>
+    </View>
+  );
 }
-
-const styles = StyleSheet.create({
-    container: { 
-        backgroundColor: "#000", 
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-    },
-    title: {
-fontSize: 24,
-color: "white",
-    }
-})
